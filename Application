@@ -1,0 +1,29 @@
+public class Application {
+
+	public static void main(String[] args) {
+
+		Wizard wizard =new Wizard("Harry Potter");
+		System.out.println(wizard.toString());
+		
+		System.out.println("Curent health: " + wizard.getHealth());
+		System.out.println("...taking damage");
+		wizard.takeDamage(40);
+		System.out.println("Health after damage: " + wizard.getHealth());
+		System.out.println(wizard.toString());
+		
+		
+		System.out.println("\n==============\n");
+		Wizard wizard1 = new Wizard("Gandolf");
+		System.out.println(wizard1.toString());
+		System.out.println("Curent health: " + wizard1.getHealth());
+		System.out.println("...taking damage");
+		wizard1.takeDamage(80);
+		System.out.println("Health after damage: " + wizard1.getHealth());
+		
+		System.out.println(wizard1.toString());
+		
+		
+
+	}
+
+}
